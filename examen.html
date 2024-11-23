@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación del Curso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Institución Educativa - Evaluación</h1>
+    </header>
+    <div class="container">
+        <div class="quiz">
+            <h2>Evaluación del Curso</h2>
+            <form id="quiz-form">
+                <!-- Pregunta 1: Radio buttons -->
+                <h4>1. ¿Qué es una variable en programación?</h4>
+                <input type="radio" name="q1" value="b"> Un espacio de almacenamiento para datos<br>
+                <input type="radio" name="q1" value="a"> Un valor constante<br>
+                <input type="radio" name="q1" value="c"> Un tipo de función<br><br>
+
+                <!-- Pregunta 2: Checkbox -->
+                <h4>2. Selecciona los lenguajes de programación:</h4>
+                <input type="checkbox" name="q2" value="a"> Java<br>
+                <input type="checkbox" name="q2" value="b"> HTML<br>
+                <input type="checkbox" name="q2" value="c"> Python<br>
+                <input type="checkbox" name="q2" value="d"> CSS<br><br>
+
+                <!-- Pregunta 3: Lista desplegable -->
+                <h4>3. ¿Qué significa CSS?</h4>
+                <select name="q3">
+                    <option value="a">Cascading Style Sheets</option>
+                    <option value="b">Computer Styling System</option>
+                    <option value="c">Colorful Style Script</option>
+                </select><br><br>
+
+                <!-- Pregunta 4: Input de texto -->
+                <h4>4. ¿Qué etiqueta HTML se usa para crear un enlace?</h4>
+                <input type="text" name="q4" placeholder="Escribe tu respuesta"><br><br>
+
+                <!-- Pregunta 5: Input numérico -->
+                <h4>5. ¿Cuántos bits tiene un byte?</h4>
+                <input type="number" name="q5" placeholder="Escribe un número"><br><br>
+
+                <button type="button" onclick="evaluateQuiz()">Enviar Respuestas</button>
+                <button type="button" onclick="clearForm()">Borrar Respuestas</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
